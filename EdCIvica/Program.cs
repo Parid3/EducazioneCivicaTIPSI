@@ -7,9 +7,26 @@ namespace EdCivica
         {
             
         }
-        public static string funzioneuno()
+        public static string funzioneuno(string s, int n)
         {
-            return "";
+            string alfabeto = "abcdefghijklmnopqrstuvwxyz";
+            string risultato = "";
+
+            foreach (char c in s)
+            {
+                int posizione = alfabeto.IndexOf(c);
+                if (posizione >= 0)
+                {
+                    posizione = (posizione + n) % alfabeto.Length;
+                    risultato += alfabeto[posizione];
+                }
+                else
+                {
+                    risultato += c;
+                }
+            }
+
+            return risultato;
         }
     }
 
