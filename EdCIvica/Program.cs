@@ -64,9 +64,33 @@ namespace EdCivica
             return somma * n;
         }
 
-        static int funzione4()
+        static int funzione4(string s, int n)
         {
-            return 0;
+            int somma = 0;
+
+           
+            s = s.ToUpper();
+
+            
+            for (int i = 0; i < s.Length; i++)
+            {
+                char c = s[i];
+
+                
+                if (Char.IsLetter(c))
+                {
+                   
+                    int valore = c - 'A' + 1;
+
+                    
+                    somma += valore;
+                }
+            }
+
+            
+            int risultato = (int)Math.Ceiling((double)somma / n);
+
+            return risultato;
         }
     }
 
