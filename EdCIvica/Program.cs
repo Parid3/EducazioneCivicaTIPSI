@@ -49,6 +49,10 @@ namespace EdCivica
 
             return risultato;
         }
+        public static int funzionetre()
+        {
+            return 0;
+        }
     }
 
 
