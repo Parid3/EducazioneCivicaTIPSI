@@ -49,9 +49,19 @@ namespace EdCivica
 
             return risultato;
         }
-        public static int funzionetre()
+        static int funzione3(string s, int n)
         {
-            return 0;
+            
+            int somma = 0;
+            foreach (char lettera in s)
+            {
+                if (Char.IsLetter(lettera)) 
+                {
+                    int valore = (int)Char.ToLower(lettera) - 96; 
+                    somma += valore;
+                }
+            }
+            return somma * n;
         }
     }
 
