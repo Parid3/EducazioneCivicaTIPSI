@@ -63,6 +63,11 @@ namespace EdCivica
             }
             return somma * n;
         }
+
+        static int funzione4()
+        {
+            return 0;
+        }
     }
 
 
