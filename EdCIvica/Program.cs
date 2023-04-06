@@ -92,6 +92,10 @@ namespace EdCivica
 
             return risultato;
         }
+        static int funzione5()
+        {
+            return 0;
+        }
     }
 
 
