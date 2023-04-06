@@ -28,6 +28,10 @@ namespace EdCivica
 
             return risultato;
         }
+        public static string funzionedue()
+        {
+            return "";
+        }
     }
 
 
