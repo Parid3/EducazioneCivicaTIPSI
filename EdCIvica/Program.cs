@@ -92,9 +92,19 @@ namespace EdCivica
 
             return risultato;
         }
-        static int funzione5()
+        static int funzione5(string s, int n)
         {
-            return 0;
+            string tempstringa = s;
+            int tempnumero = n;
+            if(tempnumero %2==0)
+            {
+                return funzione3(tempstringa, tempnumero);
+
+            }
+            else
+            {
+                return funzione4(tempstringa, tempnumero);
+            }
         }
     }
 
